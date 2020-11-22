@@ -2,5 +2,6 @@
     Сtrl + U                - посмотреть код страницы в браузер
 
 VisualStudio Code
+    Shift + Alt + F на и Ctrl + Shift + I на Linux - Чтобы отформатировать код
     End, Home               - начало конец строки
     Сtrl + /                - закоментировать строку
