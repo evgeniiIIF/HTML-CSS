@@ -222,6 +222,7 @@ http://www.komtet.ru/script.php?login=admin&name=komtet<br>
 <br>
 Метод POST передает данные таким образом, что пользователь сайта уже не видит передаваемые скрипту данные:<br>
 http://www.komtet.ru/script.php<br>
+<!-- <form action="#" method="post" enctype="multipart/form-data"> чтобы передавать файлы-->
 <br>
 Так как метод GET отправляет скрипту всю собранную информацию формы как часть URL (то есть в открытом виде),<br>
 то это может пагубно повлиять на безопасность сайта;<br>
@@ -242,10 +243,27 @@ http://www.komtet.ru/script.php<br>
     Пароль: <br />
     <input name="pd" type="password" size="25" maxlength="30" value="" /> <br />
         <!-- ввод пароля -->
+    Флаги
     <input name="remember" type="checkbox" value="yes" /> Запомнить <br />
         <!--Флаги (чекбоксы). Они используются для выбора нескольких 
         вариантов ответа и обозначаются в атрибуте как checkbox. 
         Подпись к галочке нужно писать отдельно.-->
+        <div>
+          <p>Имущество</p>
+          <div>
+            <input tabindex="5" checked type="checkbox" name="bike" value="yes" /> Велик 
+            <!-- checked сразу установлен флаг -->
+          </div>
+          <div>
+            <input tabindex="6" type="checkbox" name="car" value="yes" /> Машина
+          </div>
+          <div>
+            <input tabindex="7" disabled type="checkbox" name="house" value="yes" /> Дом
+            <!-- disabled нельзя будет установить галочку-->
+          </div>
+
+        </div>
+    <br>
     <input type="radio" name="gender" value="male" checked> Мужской<br>
     <input type="radio" name="gender" value="female"> Женский<br>
     <input type="radio" name="gender" value="other"> Другой<br>
@@ -256,13 +274,16 @@ http://www.komtet.ru/script.php<br>
     <input type="file"><br>
         <!--Загрузка файлов. При значении атрибута file появляется кнопка загрузки.-->
     <input type="reset"><br>
-        <!--Сброс всех значений. Для создания такой кнопки пишем reset. 
+        <!--Сброс всех значений. Для создания такой кнопки пишем reset Очистить форму вариант 1. 
             Чтобы все сработало, кнопка должна находиться внутри формы, в которой нужно сбросить значения.-->
     <input type="submit" name="enter" value="Вход" /><br>
         <!--Отправка. Любая форма бессмысленна, если не отправляется на сервер. 
             Значение для такой кнопки: submit.-->
     <button>Нажми на меня</button><br>
         <!--Просто кнопка. Чтобы создать кнопку без определенного действия указываем button.-->
+    <button tabindex="11" type="submit">Отправить</button>
+    <button tabindex="12" type="reset">Очистить</button> <!-- Очистить форму вариант 2-->
+        <!-- tabindex начиная с 1 определяет порядок перехода меж элементами при нажатии Таb -->
 Cписок multiple <br>    
     <!--Это тег <select>. У него есть несколько атрибутов: name, size, multiple. 
         Атрибут name работает как у переключателей. Size отвечает за то, сколько строк списка будет 
@@ -270,21 +291,25 @@ Cписок multiple <br>
         Атрибут multiple отвечает за то, можно ли выбрать сразу несколько вариантов из списка (как checkbox);
         это атрибут без значения.
         Каждый элемент списка выделяется в тег <option>. Так же, как и с <input type="checkbox"> и 
-        <input type="radio"> нужно указывать атрибут value со значением, которое будет отправлено на сервер.-->
+        <input type="radio"> нужно указывать атрибут value со значением, которое будет отправлено на сервер.
+        Ctrl позволяет выбрать несколько эллементов в multiple -->
     <select name="select" size="3" multiple="multiple">
-        <option selected="selected">Чебурашка</option>
+        <option selected="selected">Чебурашка</option> <!-- selected для установки значения по умолчанию-->
         <option>Крокодил Гена</option>
         <option>Шапокляк</option>
         <option>Крыса Лариса</option>
     </select><br>
 Выпадающий список <br>
     <select name="select2">
-        <option selected="selected">Выберите героя</option>
+        <option selected="selected">Выберите героя</option> <!-- selected для установки значения по умолчанию-->
         <option>Чебурашка</option>
         <option>Крокодил Гена</option>
         <option>Шапокляк</option>
         <option>Крыса Лариса</option>
     </select><br>
+Поле для ввода большого колличества текста <br>
+    <textarea tabindex="40" name="text" cols="9" rows="9"></textarea> <br>
+    <!--cols and rows размеры окна, обычно неуказываются а задаются с помощью JS and Css-->
 Новые типы полей<br>
 <input type="email"> Ввод E-Mail, type="email"<br>
     <!--Ввод E-Mail, type="email". Текстовое поле, у которого на 
