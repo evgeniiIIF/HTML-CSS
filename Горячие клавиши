@@ -43,4 +43,43 @@ Ctrl+/ Toggle line comment                              - закоментиро
 Shift+Alt+A Toggle block comment                        - вызов тега коментарий
 Alt+Z Toggle word wrap                                  - включить перенос слов (если текст длинный)
 
-    
+    Navigation
+Ctrl+T Show all Symbols
+Ctrl+G Go to Line...                                    - перейти к строке 10 итд
+Ctrl+P Go to File...                                    - перейти к файлу
+Ctrl+Shift+O Go to Symbol...                            - Перейти к символу.
+Ctrl+Shift+M Show Problems panel
+F8 Go to next error or warning
+Shift+F8 Go to previous error or warning
+Ctrl+Shift+Tab Navigate editor group history
+Alt+ ← / → Go back / forward
+Ctrl+M Toggle Tab moves focus                           - переключает таб на окна проги
+
+    Search and replace
+Ctrl+F Find                                             - поиск
+Ctrl+H Replace                                          - замена
+F3 / Shift+F3 Find next/previous
+Alt+Enter Select all occurences of Find match           - выбрать все найдение для редактирования
+Ctrl+D Add selection to next Find match                 - Добавить выделение к следующему совпадению
+Ctrl+K Ctrl+D Move last selection to next Find match
+Alt+C / R / W Toggle case-sensitive / regex / whole word    - Переключить чувствительность к регистру / регулярное выражение / целое слово
+
+    Multi-cursor and selection                                  - Мульти-курсор и ВЫДЕЛЕНИЕ
+Alt+Click Insert cursor                                         - Вставить курсор (печатать в нескольких местах)
+Ctrl+Alt+ ↑ / ↓ Insert cursor above / below                     - Вставить курсор выше / ниже
+Ctrl+U Undo last cursor operation                               - Отменить последнюю операцию курсора
+Shift+Alt+I Insert cursor at end of each line selected          - Вставить курсор в конец каждой выделенной строки
+Ctrl+L Select current line                                      - Выбрать текущую строку
+Ctrl+Shift+L Select all occurrences of current selection        - Выбрать все вхождения текущего выделения
+Ctrl+F2 Select all occurrences of current word                  - Выбрать все вхождения текущего слова
+Shift+Alt+→ Expand selection                                    - Расширить выбор
+Shift+Alt+← Shrink selection
+Shift+Alt +                                                     - выделить столбцом
+(drag mouse)
+Column (box) selection
+Ctrl+Shift+Alt                                                  - выделить столбец стрелками
++ (arrow key)
+Column (box) selection
+Ctrl+Shift+Alt
++PgUp/PgDn
+Column (box) selection page up/down
