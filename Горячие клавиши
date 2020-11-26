@@ -4,6 +4,43 @@
 VisualStudio Code
     Shift + Alt + F на и Ctrl + Shift + I на Linux - Чтобы отформатировать код
     
-    End, Home               - начало конец строки
-    Сtrl + /                - закоментировать строку
-    Shift+Alt+W             - обернуть выделенный текст в тег
+    End, Home                                           - начало конец строки
+    Сtrl + /                                            - закоментировать строку
+    Shift+Alt+W                                         - обернуть выделенный текст в тег
+
+    General
+Ctrl+Shift+P, F1 Show Command Palette                   - Показать палитру команд
+Ctrl+P Quick Open, Go to File…                          - Быстрое открытие, переход к файлу…
+Ctrl+Shift+N New window/instance                        - Новое окно / экземпляр
+Ctrl+Shift+W Close window/instance                      - Закрыть окно / экземпляр
+Ctrl+, User Settings                                    - Пользовательские настройки
+Ctrl+K Ctrl+S Keyboard Shortcuts                        - Горячие клавиши
+
+   Basic editing                                        - Базовое редактирование
+Ctrl+X Cut line (empty selection)                       - вырезать строку
+Ctrl+C Copy line (empty selection)                      - копировать строку
+Alt+ ↑ / ↓ Move line up/down                            - Переместить строку вверх / вниз
+Shift+Alt + ↓ / ↑ Copy line up/down                     - копировать строку вверх / вниз
+Ctrl+Shift+K Delete line                                - удалить строку целиком
+Ctrl+Enter Insert line below                            - Вставить пустую строку ниже
+Ctrl+Shift+Enter Insert line above                      - Вставить пустую строку выше
+Ctrl+Shift+\ Jump to matching bracket                   - Перейти к соответствующей скобке
+Ctrl+] / [ Indent/outdent line                          - строка с отступом выступом
+Home / End Go to beginning/end of line                  - начало / конец строки
+Ctrl+Home Go to beginning of file                       - Перейти к началу файла
+Ctrl+End Go to end of file                              - Перейти к концу файла
+Ctrl+↑ / ↓ Scroll line up/down                          - Прокрутка строки вверх вниз
+Alt+PgUp / PgDn Scroll page up/down                     - Прокрутка страницы вверх / вниз
+Ctrl+Shift+[ Fold (collapse) region                     - Свернуть (свернуть) область
+Ctrl+Shift+] Unfold (uncollapse) region                 - развернуть область
+Ctrl+K Ctrl+[ Fold (collapse) all subregions            - Свернуть (свернуть) все подобласти
+Ctrl+K Ctrl+] Unfold (uncollapse) all subregions        - развернуть все подобласти
+Ctrl+K Ctrl+0 Fold (collapse) all regions               - 
+Ctrl+K Ctrl+J Unfold (uncollapse) all regions
+Ctrl+K Ctrl+C Add line comment                          - добавить комментарий к строке
+Ctrl+K Ctrl+U Remove line comment
+Ctrl+/ Toggle line comment                              - закоментировать строку
+Shift+Alt+A Toggle block comment                        - вызов тега коментарий
+Alt+Z Toggle word wrap                                  - включить перенос слов (если текст длинный)
+
+    
