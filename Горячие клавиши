@@ -65,7 +65,14 @@ Ctrl+K Ctrl+D Move last selection to next Find match
 Alt+C / R / W Toggle case-sensitive / regex / whole word    - Переключить чувствительность к регистру / регулярное выражение / целое слово
 
     Multi-cursor and selection                                  - Мульти-курсор и ВЫДЕЛЕНИЕ
+--------------------------------------------------------------------------------------------------------------------------
 Alt+Click Insert cursor                                         - Вставить курсор (печатать в нескольких местах)
+
+                                                                  // На XFCE перейдите в Applications -> Settings -> 
+                                                                  Settings editor - > xfwm4 -> easy_click(disable value) 
+                                                                  (в редактор настроек)//
+--------------------------------------------------------------------------------------------------------------------------
+
 Ctrl+Alt+ ↑ / ↓ Insert cursor above / below                     - Вставить курсор выше / ниже
 Ctrl+U Undo last cursor operation                               - Отменить последнюю операцию курсора
 Shift+Alt+I Insert cursor at end of each line selected          - Вставить курсор в конец каждой выделенной строки
